@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mPrevButton;
     private Button mCheatButton;
 
-    private TextView mQuesutionTextView;
+    private TextView mQuestionTextView;
 
     private static final String TAG ="QuizActivity";
     private static final String KEY_INDEX = "index";
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
     private  void updateQuestions(){
         int question = mQuestions[mCurrentIndex].getTextResId();
-        mQuesutionTextView.setText(question);
+        mQuestionTextView.setText(question);
     }
 
     private void checkAnswer(boolean userPressTrue){
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        mQuesutionTextView = (TextView) findViewById(R.id.question_text_view);
+        mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
 
 
         mTrueButton = (Button) findViewById(R.id.true_button);
